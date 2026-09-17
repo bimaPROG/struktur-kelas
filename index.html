@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Struktur Kelas XI PPLG 1</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background dekorasi -->
+    <div class="decor decor-1"></div>
+    <div class="decor decor-2"></div>
+    <div class="decor decor-3"></div>
+    <div class="decor decor-4"></div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">◆</span>
+            <div>
+                <strong>STRUKTUR KELAS</strong>
+                <small>XI PPLG 1</small>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <span>SMK INFORMATIKA CBI</span>
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">STRUKTUR KELAS</p>
+
+            <h1>
+                XI PPLG 1
+                <br>
+               <span>TAHUN AJARAN 2026/2027</span>
+            </h1>
+
+            <p class="hero-description">
+                Kenali wali kelas, pengurus, dan seluruh anggota
+                kelas XI PPLG 1.
+            </p>
+
+        </div>
+
+        <div class="hero-number">
+            <span>01</span>
+            <small>CLASS</small>
+        </div>
+
+    </section>
+
+
+    <!-- WALI KELAS -->
+    <section class="section">
+
+        <div class="section-title">
+            <div>
+                <p>01 — WALI KELAS</p>
+                <h2>Wali Kelas</h2>
+            </div>
+
+            <span class="line"></span>
+        </div>
+
+
+        <div class="wali-card">
+
+            <div class="wali-photo">
+
+                <!-- GANTI FOTO DI SINI -->
+                <img
+                    src="foto/pakdudu.png"
+                    alt="foto "
+                >
+
+                <div class="photo-number">
+                    WALI
+                </div>
+
+            </div>
+
+
+            <div class="wali-info">
+
+                <span class="role-badge">
+                    WALI KELAS
+                </span>
+
+                <h2>Nama Wali Kelas</h2>
+
+                <p class="position">
+                    Wali Kelas XI PPLG 1
+                </p>
+
+                <div class="info-line"></div>
+
+                <p>
+                    Beliau merupakan wali kelas XI PPLG 1 yang
+                    membimbing dan mengarahkan siswa selama
+                    kegiatan pembelajaran di sekolah.
+                </p>
+
+
+                <div class="wali-data">
+
+                    <div>
+                        <span>JABATAN</span>
+                        <strong>Wali Kelas</strong>
+                    </div>
+
+                    <div>
+                        <span>KELAS</span>
+                        <strong>XI PPLG 1</strong>
+                    </div>
+
+                    <div>
+                        <span>TAHUN</span>
+                        <strong>2026/2027</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PENGURUS KELAS -->
+    <section class="section">
+
+        <div class="section-title">
+
+            <div>
+                <p>02 — PENGURUS</p>
+                <h2>Pengurus Kelas</h2>
+            </div>
+
+            <span class="line"></span>
+
+        </div>
+
+
+        <div class="student-grid">
+
+            <!-- KETUA -->
+            <div
+                class="student-card"
+                data-name="Aga"
+                data-role="Ketua Kelas"
+                data-class="XI PPLG 1"
+                data-description="Bertanggung jawab membantu mengatur kelas dan mengkoordinasikan kegiatan siswa."
+                data-image="foto/aga.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/aga.png" alt="Aga">
+
+                    <span class="number">01</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>KETUA KELAS</span>
+                    <h3>Aga</h3>
+                </div>
+
+            </div>
+
+
+            <!-- WAKIL -->
+            <div
+                class="student-card"
+                data-name="Ido"
+                data-role="Wakil Ketua Kelas"
+                data-class="XI PPLG 1"
+                data-description="Membantu ketua kelas dalam menjalankan tugas dan menggantikan ketua ketika diperlukan."
+                data-image="foto/ido.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/ido.png" alt="Ido">
+
+                    <span class="number">02</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>WAKIL KETUA</span>
+                    <h3>Ido</h3>
+                </div>
+
+            </div>
+
+
+            <!-- SEKRETARIS -->
+            <div
+                class="student-card"
+                data-name="Sekte"
+                data-role="Sekretaris"
+                data-class="XI PPLG 1"
+                data-description="Bertugas mencatat informasi penting dan membantu administrasi kelas."
+                data-image="foto/sekte.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/sekte.png" alt="Sekte">
+
+                    <span class="number">03</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>SEKRETARIS</span>
+                    <h3>Sekte</h3>
+                </div>
+
+            </div>
+
+
+            <!-- BENDAHARA -->
+            <div
+                class="student-card"
+                data-name="Benda"
+                data-role="Bendahara"
+                data-class="XI PPLG 1"
+                data-description="Bertanggung jawab terhadap pencatatan dan pengelolaan uang kas kelas."
+                data-image="foto/benda.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/benda.png" alt="Benda">
+
+                    <span class="number">04</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>BENDAHARA</span>
+                    <h3>Benda</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SELURUH MURID DIHAPUS -->
+    <section class="section" hidden>
+
+        <div class="section-title">
+
+            <div>
+                <p>03 — ANGGOTA</p>
+                <h2>Seluruh Murid</h2>
+            </div>
+
+            <span class="line"></span>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="tools">
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari nama murid..."
+                    onkeyup="searchStudent()"
+                >
+            </div>
+
+
+            <div class="total">
+                <strong id="totalStudent">8</strong>
+                <span>MURID</span>
+            </div>
+
+        </div>
+
+
+        <div class="student-grid all-students">
+
+
+            <!-- MURID 1 -->
+            <div
+                class="student-card"
+                data-name="Aga"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1 yang mempelajari pengembangan perangkat lunak dan gim."
+                data-image="foto/aga.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/aga.png" alt="Aga">
+
+                    <span class="number">01</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Aga</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 2 -->
+            <div
+                class="student-card"
+                data-name="Ido"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/ido.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/ido.png" alt="Ido">
+
+                    <span class="number">02</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Ido</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 3 -->
+            <div
+                class="student-card"
+                data-name="Sekte"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/sekte.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/sekte.png" alt="Sekte">
+
+                    <span class="number">03</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Sekte</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 4 -->
+            <div
+                class="student-card"
+                data-name="Benda"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/benda.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/benda.png" alt="Benda">
+
+                    <span class="number">04</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Benda</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 5 -->
+            <div
+                class="student-card"
+                data-name="Kominfo"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/kominfo.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/kominfo.png" alt="Kominfo">
+
+                    <span class="number">05</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Kominfo</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 6 -->
+            <div
+                class="student-card"
+                data-name="Peralatan"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/peralatan.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/peralatan.png" alt="Peralatan">
+
+                    <span class="number">06</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Peralatan</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 7 -->
+            <div
+                class="student-card"
+                data-name="Keamanan"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/keamanan.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/keamanan.png" alt="Keamanan">
+
+                    <span class="number">07</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Keamanan</h3>
+                </div>
+
+            </div>
+
+
+            <!-- MURID 8 -->
+            <div
+                class="student-card"
+                data-name="Humas"
+                data-role="Murid"
+                data-class="XI PPLG 1"
+                data-description="Siswa kelas XI PPLG 1."
+                data-image="foto/humas.png"
+                onclick="openModal(this)"
+            >
+
+                <div class="student-image">
+                    <img src="foto/humas.png" alt="Humas">
+
+                    <span class="number">08</span>
+
+                    <div class="view-text">
+                        LIHAT PROFIL →
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <span>MURID</span>
+                    <h3>Humas</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            <strong>XI PPLG 1</strong>
+            <p>SMK Informatika CBI</p>
+        </div>
+
+        <div class="footer-right">
+            <span>STRUKTUR KELAS</span>
+            <small>2026 / 2027</small>
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div
+        class="modal"
+        id="profileModal"
+        onclick="closeOutside(event)"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-photo">
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt="Foto Profil"
+                >
+
+            </div>
+
+
+            <div class="modal-info">
+
+                <span
+                    class="modal-role"
+                    id="modalRole"
+                >
+                    MURID
+                </span>
+
+                <h2 id="modalName">
+                    Nama
+                </h2>
+
+                <p
+                    class="modal-class"
+                    id="modalClass"
+                >
+                    XI PPLG 1
+                </p>
+
+                <div class="modal-line"></div>
+
+                <p id="modalDescription">
+                    Deskripsi
+                </p>
+
+
+                <div class="modal-details">
+
+                    <div>
+                        <span>STATUS</span>
+                        <strong>Aktif</strong>
+                    </div>
+
+                    <div>
+                        <span>KELAS</span>
+                        <strong>XI PPLG 1</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="java.js"></script>
+
+</body>
+</html>
