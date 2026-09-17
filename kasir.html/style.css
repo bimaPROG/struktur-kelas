@@ -1,0 +1,853 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(40, 90, 120, 0.15), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(60, 80, 110, 0.15), transparent 30%),
+        #111214;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   BACKGROUND DECORATION
+========================= */
+
+.decor {
+    position: fixed;
+    border: 1px solid rgba(70, 150, 210, 0.3);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.decor-1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    top: 80px;
+    right: 8%;
+    transform: rotate(15deg);
+}
+
+.decor-2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    bottom: 15%;
+    left: 5%;
+}
+
+.decor-3 {
+    width: 180px;
+    height: 180px;
+    border-radius: 40px;
+    bottom: -60px;
+    right: 4%;
+    transform: rotate(20deg);
+}
+
+.decor-4 {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    top: 40%;
+    left: -30px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 25px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #888;
+    font-size: 13px;
+}
+
+.logo strong {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.logo small {
+    color: #888;
+    font-size: 10px;
+}
+
+.nav-right {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    min-height: 420px;
+
+    padding: 80px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.06),
+            rgba(255,255,255,0.01)
+        );
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.small-title {
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 95px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #999;
+    font-size: 0.42em;
+    letter-spacing: 1px;
+}
+
+.hero-description {
+    color: #999;
+    max-width: 450px;
+    line-height: 1.7;
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+.hero-number {
+    width: 140px;
+    height: 140px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255,255,255,0.025);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.5);
+}
+
+.hero-number span {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.hero-number small {
+    color: #777;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    max-width: 1180px;
+    margin: auto;
+    padding: 90px 25px 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+
+.line {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    flex: 1;
+}
+
+
+/* =========================
+   WALI KELAS
+========================= */
+
+.wali-card {
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #292a2c,
+            #101112
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.45);
+
+    min-height: 450px;
+
+    overflow: hidden;
+}
+
+.wali-photo {
+    position: relative;
+    min-height: 450px;
+    background: #ddd;
+}
+
+.wali-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-number {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+
+    padding: 10px 15px;
+
+    background: rgba(0,0,0,0.75);
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.wali-info {
+    padding: 60px;
+}
+
+.role-badge {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #bbb;
+}
+
+.wali-info h2 {
+    margin-top: 25px;
+    font-size: 42px;
+}
+
+.position {
+    color: #777;
+    margin-top: 8px;
+}
+
+.info-line {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 30px 0;
+}
+
+.wali-info > p:not(.position) {
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 14px;
+    max-width: 500px;
+}
+
+.wali-data {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.wali-data div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wali-data span {
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.wali-data strong {
+    font-size: 13px;
+}
+
+
+/* =========================
+   STUDENT GRID
+========================= */
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.student-card {
+    background: #1b1c1e;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25);
+}
+
+.student-card:hover {
+    transform: translateY(-8px);
+
+    background: #242527;
+
+    box-shadow:
+        0 25px 55px rgba(0,0,0,0.55);
+}
+
+.student-image {
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    background: #333;
+}
+
+.student-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.student-card:hover .student-image img {
+    transform: scale(1.06);
+}
+
+.number {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.75);
+
+    font-size: 10px;
+}
+
+.view-text {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,0.9)
+        );
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition: 0.3s;
+}
+
+.student-card:hover .view-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.student-info {
+    padding: 20px;
+}
+
+.student-info span {
+    color: #777;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.student-info h3 {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.search-box {
+    width: 350px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-bottom: 1px solid #444;
+
+    padding: 12px 5px;
+}
+
+.search-box span {
+    font-size: 22px;
+    color: #777;
+}
+
+.search-box input {
+    width: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+
+    font-family: inherit;
+}
+
+.search-box input::placeholder {
+    color: #666;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.total strong {
+    font-size: 30px;
+}
+
+.total span {
+    font-size: 9px;
+    color: #777;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    max-width: 1180px;
+    margin: 100px auto 0;
+
+    padding: 50px 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer strong {
+    font-size: 15px;
+}
+
+footer p {
+    color: #666;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+.footer-right span {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-right small {
+    color: #666;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.82);
+
+    backdrop-filter: blur(8px);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    width: 850px;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #292a2c,
+            #111214
+        );
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,0.8);
+
+    position: relative;
+
+    animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+.close {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    background: rgba(0,0,0,0.5);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.close:hover {
+    background: white;
+    color: black;
+}
+
+.modal-photo {
+    height: 550px;
+    background: #333;
+}
+
+.modal-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 65px 50px;
+}
+
+.modal-role {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.modal-info h2 {
+    font-size: 42px;
+    margin-top: 15px;
+}
+
+.modal-class {
+    color: #777;
+    margin-top: 8px;
+}
+
+.modal-line {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 30px 0;
+}
+
+#modalDescription {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.modal-details {
+    display: flex;
+    gap: 45px;
+
+    margin-top: 40px;
+}
+
+.modal-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-details span {
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.modal-details strong {
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wali-card {
+        grid-template-columns: 1fr;
+    }
+
+    .wali-photo {
+        height: 450px;
+    }
+
+    .modal-content {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-photo {
+        height: 350px;
+    }
+
+    .modal-info {
+        padding: 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 20px 15px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
+        min-height: 500px;
+    }
+
+    .hero-number {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .section {
+        padding: 60px 15px 10px;
+    }
+
+    .section-title {
+        gap: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .student-image {
+        height: 250px;
+    }
+
+    .student-info {
+        padding: 14px;
+    }
+
+    .student-info h3 {
+        font-size: 13px;
+    }
+
+    .wali-info {
+        padding: 30px 25px;
+    }
+
+    .wali-info h2 {
+        font-size: 30px;
+    }
+
+    .wali-data {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .tools {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .total {
+        justify-content: flex-end;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+
+}
